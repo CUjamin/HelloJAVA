@@ -1,0 +1,17 @@
+.git/
+
+.idea/
+
+target/
+*.jar
+*.log
+*.iml
+*.properties
+
+
+# eclipse ignore
+.settings/
+.project/
+.classpath/
+
+
