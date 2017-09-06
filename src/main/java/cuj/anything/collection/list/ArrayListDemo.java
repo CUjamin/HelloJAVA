@@ -1,4 +1,4 @@
-package cuj.anything.set.list;
+package cuj.anything.collection.list;
 
 import java.util.ArrayList;
 import java.util.List;
