@@ -2,6 +2,7 @@ package cuj.anything.blockingqueue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by cujamin on 2017/9/5.
@@ -27,5 +28,9 @@ public class BlockingQueueExample {
         new Thread(consumer).start();
 
         Thread.sleep(4000);
+
+
+        AtomicInteger atomicInteger = new AtomicInteger();
+
     }
 }
