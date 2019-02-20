@@ -1,0 +1,24 @@
+find:
+class:C+n
+file:CS+n
+symbol:CAS+n
+find in path:CS+f
+
+批操作：
+CSA+J
+整个：C+W
+C+ ->
+大写/小写：CS+U
+行首：home
+行尾：end
+
+live templates：可自定义
+main方法：psvm
+
+prostfix completion：不可自定义
+for.i
+
+A+E
+
+作业：
+

@@ -12,9 +12,9 @@ public class LockDemo {
         ReentrantLock lock = new ReentrantLock(true);
         lock.lock();
         System.out.println("lock");
-        lock.unlock();
         lock.getHoldCount();
         lock.getQueueLength();
+        lock.unlock();
         lock.getWaitQueueLength(null);
         lock.hasQueuedThread(null);
         lock.hasQueuedThreads();
