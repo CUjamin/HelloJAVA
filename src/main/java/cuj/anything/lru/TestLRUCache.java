@@ -10,8 +10,7 @@ public class TestLRUCache {
     public void testLRU()
     {
         LRUCacheInheritanceHM<Integer,Integer> lru = new LRUCacheInheritanceHM<Integer, Integer>(5);
-        for(int i=0;i<10;i++)
-        {
+        for(int i=0;i<10;i++) {
             lru.put(i,i);
         }
         System.out.println(lru.toString());

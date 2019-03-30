@@ -57,11 +57,11 @@
         <!--</dependency>-->
 
 
-        <dependency>
-            <groupId>com.genesyslab.platform</groupId>
-            <artifactId>comappblock</artifactId>
-            <version>853.0.2</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.genesyslab.platform</groupId>-->
+            <!--<artifactId>comappblock</artifactId>-->
+            <!--<version>853.0.2</version>-->
+        <!--</dependency>-->
 
         <!-- log -->
         <dependency>
@@ -112,19 +112,17 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
-        <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>7.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.ow2.asm</groupId>-->
+            <!--<artifactId>asm</artifactId>-->
+            <!--<version>7.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.5</version>
         </dependency>
-
-
 
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
