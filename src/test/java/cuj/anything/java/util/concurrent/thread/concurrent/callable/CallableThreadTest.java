@@ -1,12 +1,9 @@
 package cuj.anything.java.util.concurrent.thread.concurrent.callable;
 
 import org.junit.Test;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
-
-import static org.junit.Assert.*;
 
 /**
  * @Auther: cujamin
@@ -23,7 +20,6 @@ public class CallableThreadTest {
     public void call() {
 
         Callable callable = new CallableThread();
-
 
         FutureTask<Integer> result = new FutureTask<>(callable);
         new Thread(result).start();

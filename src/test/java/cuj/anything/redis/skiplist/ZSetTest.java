@@ -21,12 +21,11 @@ public class ZSetTest {
         for(int i = 0; i < trytimes; i++){
             resset[ZSet.zslRandomLevel()]++;
         }
-        System.out.println("init resset");
+
         for(int i = 1; i <= 32; i++){
             if(resset[i-1] == 0){
                 percent = 0.0;
-            }
-            else{
+            }else{
                 percent = (double)resset[i]/resset[i-1];
             }
             System.out.println("resset["+i+"] is "+resset[i]+", percentage of resset["+(i-1)+"] is "+percent);
