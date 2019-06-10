@@ -50,11 +50,11 @@
 
         <!--JSON-->
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <!--<dependency>-->
-            <!--<groupId>com.alibaba</groupId>-->
-            <!--<artifactId>fastjson</artifactId>-->
-            <!--<version>1.2.5</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.24</version>
+        </dependency>
 
 
         <!--<dependency>-->
@@ -101,7 +101,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.44</version>
+            <version>1.2.24</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/cglib/cglib -->
@@ -139,6 +139,11 @@
             <version>2.27.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.19.0-GA</version>
+        </dependency>
     </dependencies>
     <!--<repositories>-->
         <!--<repository>-->
@@ -146,4 +151,6 @@
             <!--<url>http://mvn.gt.igexin.com/nexus/content/repositories/releases/</url>-->
         <!--</repository>-->
     <!--</repositories>-->
+
+
 </project>
