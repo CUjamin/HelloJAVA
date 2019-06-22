@@ -19,6 +19,10 @@ public class FastjsonTest {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+
+
+
         try{
             System.out.println("test 2");
             User user2 = JSON.parseObject(userStr,User.class);

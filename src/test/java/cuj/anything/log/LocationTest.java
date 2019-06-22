@@ -15,5 +15,6 @@ public class LocationTest {
     public void getInfo()  {
         Location l = new Location();
         l.getInfo();
+        System.out.println(l.getClass().getName());
     }
 }
