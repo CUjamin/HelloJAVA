@@ -1,4 +1,7 @@
+package cuj.anything.fastjsontest;
+
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.parser.Feature;
 
 /**
  * @Auther: cujamin
@@ -7,9 +10,9 @@ import com.alibaba.fastjson.JSON;
  */
 public class FastjsonTest {
 
-    //        public static String userStr="{\"@type\":\"User\",\"name\":\"myname\"}";
+    //        public static String userStr="{\"@type\":\"cuj.anything.fastjsontest.User\",\"name\":\"myname\"}";
 //    public static String userStr2="{\"@type\":\"com.alibaba.fastjson.util.ASMClassLoader\",\"defaultAssertionStatus\":true}";
-    public static String userStr="{\"@type\":\"User2\",\"name\":\"出现漏洞\"}";
+    public static String userStr="{\"@type\":\"cuj.anything.fastjsontest.User2\",\"name\":\"出现漏洞\"}";
 
     public static void main(String[] args) {
         try{
@@ -26,6 +29,17 @@ public class FastjsonTest {
         try{
             System.out.println("test 2");
             User user2 = JSON.parseObject(userStr,User.class);
+            System.err.println(user2.getName());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        try{
+            String userStr3="{\"@type\":\"cuj.anything.fastjsontest.User2\",\"name\":\"出现漏洞\"}";
+
+            System.out.println("test 3");
+            User user2 = JSON.parseObject(userStr3,User.class, Feature.SortFeidFastMatch);
             System.err.println(user2.getName());
         }catch (Exception e){
             e.printStackTrace();
@@ -55,4 +69,9 @@ class User2{
         this.name = name;
         System.out.println("漏洞:"+name);
     }
+}
+
+
+class User3{
+    private String name;
 }

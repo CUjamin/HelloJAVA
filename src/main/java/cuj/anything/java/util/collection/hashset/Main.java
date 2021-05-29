@@ -9,8 +9,8 @@ import java.util.Set;
  * @Description:
  */
 public class Main {
-    public static void main(String[] args) {
-        Set<String> set = new HashSet<>();
+    public static void  main(String[] args) {
+        Set<String> set = new HashSet<String>();
         set.add("123");
     }
 }

@@ -36,7 +36,7 @@ public class FristLambda {
     }
     public static void predicateTest()
     {
-        List languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
+        List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
 
         System.out.println("Languages which starts with J :");
         filter(languages, (str)->(""+str).startsWith("J"));
