@@ -13,8 +13,11 @@ target/
 .settings/
 .project/
 .classpath/
+.classpath
+.project
 
 # vscode ignore
 .vscode/
+
 
 
